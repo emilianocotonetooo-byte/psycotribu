@@ -137,7 +137,7 @@ html {
 
 /* --- CONTACTO --- */
 .seccion-contacto {
-  background-color: #d8a7b1; /* Fondo rosa suave de tu mockup */
+  background-color: #d8a7b1; 
   padding: 80px 0;
   text-align: center;
 }
@@ -293,6 +293,48 @@ html {
     flex-direction: column; /* Apila el texto arriba y la foto abajo */
     padding: 40px 25px;
     gap: 35px;
+  }
+}
+
+
+/* --- ESTILOS RESPONSIVOS PARA CELULARES --- */
+@media (max-width: 768px) {
+  
+  .seccion-presentacion {
+    padding: 40px 20px; /* Reducimos el espacio vertical y damos margen a los lados */
+  }
+
+  .container-presentacion {
+    flex-direction: column; /* Cambia de lado a lado a: uno arriba del otro */
+    gap: 30px; 
+    text-align: center; 
+  }
+
+  .columna-foto {
+    width: 100%;
+    order: 1; /* Asegura a CSS que la foto va primero arriba */
+  }
+
+  .foto-perfil {
+    max-width: 280px; /* Controlamos que la foto no se desborde y se vea estética */
+    margin: 0 auto;
+  }
+
+  .columna-texto {
+    width: 100%;
+    order: 2; /* El texto se acomoda abajo de la foto */
+    text-align: center; 
+  }
+
+  .titulo-nombre {
+    font-size: 2.2rem; /* Reducimos el tamaño de la tipografía para que no se coma la pantalla */
+    line-height: 1.2;
+  }
+
+  .descripcion {
+    font-size: 1.1rem; 
+    text-align: center; /* En celular el texto justificado deja huecos centrado se lee mejor */
+    margin-bottom: 10px;
   }
 }
 
