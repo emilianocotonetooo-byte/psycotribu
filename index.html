@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Psycotribu</title>
+    <link rel="stylesheet" href="CSS/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+    <script src="JS/bootstrap.min.js"></script>
+
+<!-- MI CSS -->
+  <link rel="stylesheet" href="CSS/styles.css">
+
+
+</head>
+<body>
+
+<!--MENU DE NAVEGACION-->
+    <nav class="navbar navbar-expand-lg montserrat-bold " style= "background-color: #7e56a4";>
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"> <img src="IMG/LOGOTIPO_PSYCOTRIBU.png" alt="Bootstrap" width="70" height="70"></a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="conocenos.html">Conócenos</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Servicios
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="servicios.html">Ansiedad</a></li>
+                  <li><a class="dropdown-item" href="servicios.html">Crisis y Duelos</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="servicios.html#terapia-online">Terapia en linea</a></li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" href="tips.html">Tips</a>
+              </li>
+            </ul>
+
+
+<!-- Button trigger modal -->
+  <button type="button" class="btn btn-outline-light" data-bs-toggle="modal" data-bs-target="#exampleModal">Contacto
+  
+  </button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered"> <div class="modal-content contenedor-modal-contacto">
+      
+      <div class="modal-header border-0 pb-0">
+        <h1 class="modal-title fs-3 fuente-bold titulo-modal" id="exampleModalLabel">¿Cómo contactarnos?</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      
+      <hr class="linea-separadora">
+
+      <div class="modal-body montserrat d-flex flex-column gap-3 pt-0">
+        
+        <div class="d-flex align-items-center gap-3 item-contacto">
+          <i class="bi bi-chat-left-text-fill icono-contacto"></i>
+          <span>Gestiona tus consultas por:</span>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 item-contacto">
+          <i class="bi bi-envelope-fill icono-contacto"></i>
+          <a class="text-decoration-none texto-enlace">psicos.anne@gmail.com</a>
+        </div>
+
+        <div class="d-flex align-items-center gap-3 item-contacto">
+          <i class="bi bi-whatsapp icono-contacto"></i>
+          <a href="https://wa.me/525516810543?text=Hola%20Anne,%20tengo%20dudas%20sobre%20mi%20acompañamiento" target="_blank" class="text-decoration-none texto-enlace">55-1681-0543</a>
+        </div>
+
+      </div>
+      
+      <div class="modal-footer border-0 pt-0">
+        <button type="button" class="btn btn-danger btn-cerrar-modal montserrat" data-bs-dismiss="modal">Cerrar</button>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+          </div>
+        </div>
+      </nav>
+
+<!--BANNERS-->
+
+      <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="IMG/BANNER_INICIO 1.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/BANNER_INICIO 2.jpg" width="1900px" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="IMG/BANNER_INICIO 3.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleFade" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+      
+
+<!--Cuerpo de pagina-->
+
+<section class="seccion-iconos">
+ <div class="row">
+    <div class="col-12 col-md-6 col-lg-4 text-center mb-4"> 
+      <h2 class="text-center"><img src="IMG/ICONO 4.png" width="250px"></h2>
+      <h3 class="mt-3 fuente-bold">Enfoque humano</h3>
+
+</div>
+
+
+<div class="col-12 col-md-6 col-lg-4 text-center mb-4">
+  <h2 class="text-center"><img src="IMG/ICONO 5.png" width="250px"></h2>
+  <h3 class="mt-3 fuente-bold">Terapia en línea</h3>
+   
+</div>
+
+
+<div class="col-12 col-md-6 col-lg-4 text-center mb-4">
+  <h2 class="text-center"><img src="IMG/ICONO 6.png" width="250px"></h2>
+  <h3 class="mt-3 fuente-bold">Terapia presencial</h3>
+  
+</div>
+
+
+      </div>
+        </div>
+
+</section>
+
+<!--CAJA DE TEXTO-->
+
+<section class="seccion-info-rosa">
+<div class="container">
+  <div class="row align-items-center info-block">
+
+    <!--IMAGEN-->
+    <div class="col-12 col-md-6 text-center">
+      <img src="IMG/prueba1.jpg" class="info-img">
+    </div>
+
+    <!--TEXTO-->
+      <div class="col-12 col-md-6 montserrat">
+        <div class="text-box">
+          <p>
+          La terapia se construye desde el diálogo y el respeto por
+          la historia de cada persona, promoviendo una relación
+          terapéutica segura y empática. Más que ofrecer
+          respuestas únicas, el <strong>proceso busca ayudar a cada
+          paciente a reconocer sus propios recursos</strong>, resignificar
+          experiencias y construir formas más saludables de
+          relacionarse consigo mismo y con su entorno.
+          </p>
+        </div>
+        
+      </div>
+
+
+
+  <div class="row align-items-center info-block reverse row">
+
+    <!--IMAGEN-->
+    <div class="col-12 col-md-6 text-center">
+        <img src="IMG/prueba2.jpg" class="info-img">
+    </div>
+    
+    <!--TEXTO-->
+      <div class="col-12 col-md-6 montserrat">
+        <div class="text-box">
+          <p>
+          Ofrezco <strong>apoyo en procesos terapéuticos</strong> enfocados en
+          el bienestar emocional, la construcción de identidad y
+          el fortalecimiento de relaciones significativas.
+
+          Mi enfoque es humano, crítico y relacional, y tiene
+          como objetivo ofrecer <strong>herramientas que ayuden a
+          enfrentar crisis, ansiedad, duelos</strong>, desde una perspectiva
+          consciente y respetuosa.
+
+          </p>
+        </div>
+        
+      </div>
+
+  </div>
+
+</section>
+
+</div>
+
+
+<!-- ===== TESTIMONIOS ===== -->
+<section class="testimonials">
+  <h2 class="testimonials-title montserrat-bold">Acompañamientos exitosos</h2>
+
+  <div class="carousel">
+    <div class="carousel-track">
+
+      <!-- CARD 1 -->
+      <div class="testimonial-card montserrat">
+        <p>"La terapia cambió completamente mi forma de ver las cosas."</p>
+        <div class="user montserrat-bold">
+          <img src="IMG/MARIA.jpg" alt="Paciente" class="user-photo">
+
+        <div class="user-info"> 
+          <strong>María López</strong>
+          <span>Paciente</span>
+        </div>  
+      </div>
+      </div>
+
+      <!-- CARD 2 -->
+      <div class="testimonial-card montserrat">
+        <p>"Excelente atención, muy profesional y empática en todo momento."</p>
+        <div class="user montserrat-bold">
+        <img src="IMG/CARLOS.jpg" alt="Paciente" class="user-photo">
+
+        <div class="user-info"> 
+          <strong>Carlos Pérez</strong>
+          <span>Paciente</span>
+        </div>
+      </div>
+      </div>
+
+      <!-- CARD 3 -->
+      <div class="testimonial-card montserrat">
+        <p>"Recomiendo totalmente el servicio, fue una experiencia muy positiva."</p>
+        <div class="user montserrat-bold">
+          <img src="IMG/ANA.jpg" alt="Paciente" class="user-photo">
+
+        <div class="user-info"> 
+          <strong>Ana Ruiz</strong>
+          <span>Paciente</span>
+          </div>
+      </div>
+      </div>
+
+      <!-- EFECTO INFINITO -->
+      <div class="testimonial-card montserrat">
+        <p>"La terapia cambió completamente mi forma de ver las cosas."</p>
+        <div class="user montserrat-bold">
+          <img src="IMG/MARIA.jpg" alt="Paciente" class="user-photo">
+
+        <div class="user-info">  
+          <strong>María López</strong>
+          <span>Paciente</span>
+          </div>
+      </div>
+      </div>
+
+      <div class="testimonial-card montserrat">
+        <p>"Excelente atención, muy profesional y empática en todo momento."</p>
+        <div class="user montserrat-bold">
+          <img src="IMG/CARLOS.jpg" alt="Paciente" class="user-photo">
+
+        <div class="user-info"> 
+          <strong>Carlos Pérez</strong>
+          <span>Paciente</span>
+        </div>
+      </div>
+      </div>
+
+      <div class="testimonial-card montserrat">
+        <p>"Recomiendo totalmente el servicio, fue una experiencia muy positiva."</p>
+        <div class="user montserrat-bold">
+        <img src="IMG/ANA.jpg" alt="Paciente" class="user-photo">
+
+        <div class="user-info">
+          <strong>Ana Ruiz</strong>
+          <span>Paciente</span>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+<!-- Pie de pagina -->
+
+<footer class="footer">
+  <div class="container">
+    <p>Síguenos en nuestras redes sociales:</p>
+
+    <div class="social-icons">
+      <a href="https://www.facebook.com/share/1H2RqMe9A8/?mibextid=wwXIfr"><i class="bi bi-facebook"></i></a>
+      <a href="https://www.instagram.com/psycotribu?igsh=MWc0OXpiZW85b2NyZw=="><i class="bi bi-instagram"></i></a>
+      <a href="https://wa.me/525516810543?text=Hola%20Anne,%20me%20gustaría%20iniciar%20mi%20acompañamiento"><i class="bi bi-whatsapp"></i></a>
+    </div>
+
+  <p class="mt-3 mb-0">&copy; 2026 Psycotribu | Todos los derechos reservados.</p>  
+
+  </div>
+</footer>
+
+
+      <script src="JS/bootstrap.bundle.min.js"></script>
+</body>
+</html>
