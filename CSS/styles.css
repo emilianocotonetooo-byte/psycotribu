@@ -1,0 +1,288 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+
+/* Espacio entre secciones */
+section {
+    padding: 80px 0; 
+}
+
+.seccion-iconos {
+    background-color: #ffffff;
+}
+
+.seccion-info-rosa {
+    background-color: #D8A7B1;
+}
+
+
+/* ===== CAJA DE TEXTO ===== */
+.seccion-info-rosa{
+  background-color: #d3a7b1;
+  padding: 80px 0;
+  overflow: hidden;
+}
+
+.info-block{
+  gap: 40px 0;
+}
+
+.info-img{
+  width: 80%;
+  max-width: 500px;
+  border-radius: 20px;
+  display: block;
+  margin: 0 auto;
+}
+
+.text-box{
+  padding: 20px;
+  text-align: justify;
+}
+
+.text-box p{
+  font-size: 18px;
+  line-height: 1.8;
+  color: #ffffff;
+  margin: 0;
+}
+
+@media (min-width: 768px){
+  .reverse-row{
+    flex-direction: row-reverse;
+  }
+}
+
+
+
+/* ===== TESTIMONIOS ===== */
+.testimonials {
+  background-color: #7E56A4 ;
+  padding: 80px 20px;
+  overflow: hidden;
+}
+
+.testimonials-title {
+  text-align: center;
+  color: white;
+  font-size: 32px;
+  margin-bottom: 50px;
+  font-weight: 600;
+}
+
+/* CONTENEDOR */
+.carousel {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+/* TRACK (animación) */
+.carousel-track {
+  display: flex;
+  gap: 50px;
+  width: max-content;
+  animation: scroll 20s linear infinite;
+}
+
+/* TARJETAS */
+.testimonial-card {
+  background: white;
+  border-radius: 20px;
+  padding: 25px;
+  min-width: 300px;
+  max-width: 320px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.26);
+  transition: transform 0.3s ease;
+}
+
+/* HOVER */
+.testimonial-card:hover {
+  transform: translateY(-8px);
+}
+
+/* TEXTO */
+.testimonial-card p {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.6;
+   min-width: 300px;
+}
+
+/* USUARIO */
+.user {
+  margin-top: 15px;
+  display: flex;
+  align-items: center; /* Alinea verticalmente la foto con el texto */
+  gap: 12px;
+}
+
+.user-photo {
+  width: 50px;          /* Ancho de la foto */
+  height: 50px;         /* Alto de la foto */
+  border-radius: 50px;  /* Foto circular */
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: column; /* Nombre  ARRIBA y Paciente ABAJO */
+  align-items: flex-start; /* Alinea el texto a la izquierda */
+}
+
+.user-info strong {
+  display: inline-block;
+  color: #333;
+}
+
+.user-info span {
+  font-size: 12px;
+  color: #777;
+}
+
+/* ANIMACIÓN */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+
+/* ==== PIE DE PAGINA ====*/
+
+.footer {
+  background-color: #D8A7B1;
+  color: white;
+  padding: 40px 0;
+  font-family: 'MontserratVariable';
+}
+
+.footer a {
+  color: white;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0b93ee;
+}
+
+/* FUENTES */
+
+@font-face {
+  font-family: 'MyFont' ;
+  src: url('../FONTS/Lora-VariableFont_wght.ttf');
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+.fuente {
+  color: #7E56A4;
+  font-family: MyFont;
+  font-weight: 400;
+}
+
+.fuente-bold {
+  font-family: 'MyFont';
+  font-weight: 700;
+  color: #7E56A4
+}
+
+@font-face {
+  font-family: 'MontserratVariable';
+  src: url('../FONTS/Montserrat-VariableFont_wght.ttf');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.montserrat {
+  color: #ffffff;
+  font-family: 'MontserratVariable';
+  font-weight: 400
+}
+
+.montserrat-bold {
+  color: #ffffff;
+  font-family: 'MontserratVariable';
+  font-weight: 700;
+}
+
+
+
+/* --- PERSONALIZACION DEL MODAL --- */
+
+/* Contenedor general del modal */
+.contenedor-modal-contacto {
+  border-radius: 30px !important; 
+  padding: 20px;
+  border: none !important;
+}
+
+/* Título principal */
+.titulo-modal {
+  color: #492868; 
+} 
+
+/* Línea sutil debajo del título */
+.linea-separadora {
+  border: 0;
+  border-top: 1px solid #5f5f5f;
+  margin: 15px 20px;
+}
+
+/* Estilos de los renglones */
+.item-contacto {
+  color: #492868;
+  font-size: 1.3rem;
+}
+
+/* Los enlaces de correo y teléfono */
+.texto-enlace {
+  color: #492868;
+  transition: opacity 0.2s ease;
+}
+
+.texto-enlace:hover {
+  opacity: 0.8;
+}
+
+/* LOS ICONOS REDONDOS MORADOS */
+.icono-contacto {
+  color: #7e56a4; 
+  font-size: 1.7rem; /* Tamaño del icono */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BOTÓN CERRAR ROJO */
+.btn-cerrar-modal {
+  background-color: #ff3b30 !important;
+  border: none !important;
+  border-radius: 12px;
+  padding: 10px 25px;
+  font-size: 1rem;
+}
+
+.btn-cerrar-modal:hover {
+  background-color: #ce2c23 !important;
+}

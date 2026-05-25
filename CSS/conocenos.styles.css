@@ -1,0 +1,377 @@
+/* ===================================================
+   CSS PARA LA PESTAÑA CONOCENOS
+   =================================================== */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+   /* FUENTES */
+
+@font-face {
+  font-family: 'LoraVariable' ;
+  src: url('..//FONTS/Lora-VariableFont_wght.ttf');
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+.fuente {
+  font-family: LoraVariable;
+  font-weight: 400;
+}
+
+.fuente-bold {
+  font-family: 'LoraVariable';
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'MontserratVariable';
+  src: url('..//FONTS/Montserrat-VariableFont_wght.ttf');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: 'MontserratVariable';
+  font-weight: 400
+}
+
+.montserrat-bold {
+  font-family: 'MontserratVariable';
+  font-weight: 700;
+}
+
+
+
+.seccion-presentacion {
+  background-color: #d8a7b1; 
+  padding: 70px 0;  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Contenedor principal que junta las dos columnas */
+.container-presentacion {
+  max-width: 1100px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 50px; /* Espacio de separación entre la foto y el texto */
+}
+
+/* --- COLUMNA DE LA FOTO --- */
+.columna-foto {
+  flex: 1; /* Toma el 50% del espacio */
+  display: flex;
+  justify-content: center;
+}
+
+.foto-perfil {
+  width: 100%;
+  max-width: 400px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center top;
+  
+  /* Esquinas redondeadas */
+  /* arriba-izquierda arriba-derecha abajo-derecha abajo-izquierda */
+  border-radius: 40px 40px 10px 40px; 
+  box-shadow: 0px 10px 30px rgba(27, 19, 19, 0.308); /* Sombra */
+}
+
+/* --- COLUMNA DEL TEXTO --- */
+.columna-texto {
+  flex: 1; /* Toma el otro 50% del espacio */
+  display: flex;
+  flex-direction: column;
+}
+
+.sobremi {
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.titulo-nombre {
+  font-size: 3.5rem;
+  color: #ffffff;
+  line-height: 1.1;
+  margin-bottom: 15px;
+}
+
+.cedula {
+  font-size: 1rem;
+  color: #ffffff;
+  margin-bottom: 25px;
+}
+
+.descripcion {
+  font-size: 1.3rem;
+  line-height: 1.5;
+  color: #ffffff; 
+  margin-bottom: 30px;
+  text-align: justify;
+}
+
+
+/* --- CONTACTO --- */
+.seccion-contacto {
+  background-color: #d8a7b1; /* Fondo rosa suave de tu mockup */
+  padding: 80px 0;
+  text-align: center;
+}
+
+.titulo-contacto {
+  color: #ffffff;
+  font-size: 3rem;
+  margin-bottom: 50px;
+}
+
+/* Contenedor que alinea las 3 tarjetas de lado a lado */
+.container-contacto {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px; /* Separación entre tarjetas */
+  flex-wrap: wrap; /* Si la pantalla es pequeña, se acomodan hacia abajo */
+}
+
+/* --- ESTILO DE LA TARJETA --- */
+.tarjeta-red {
+  background-color: #7e56a4; 
+  flex: 1;
+  min-width: 280px;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0px 10px 30px rgba(27, 19, 19, 0.308); /* Sombra */
+}
+
+/* Contenedor de la imagen para que sea cuadrada */
+.contenedor-foto {
+  width: 100%;
+  aspect-ratio: 1 / 1; 
+}
+
+.contenedor-foto img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Bloque inferior de texto y botón */
+.contenido-tarjeta {
+  padding: 25px 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  flex-grow: 1; /* Hace que todos los bloques de texto midan lo mismo */
+}
+
+.contenido-tarjeta p {
+  color: #ffffff;
+  font-size: 1rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+}
+
+/* --- BOTONES DE REDES SOCIALES --- */
+.btn-red {
+  display: inline-block;
+  background-color: #492868; 
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px; /* Tamaño vertical del boton */
+  width: 85%; /* Ancho proporcional al contenedor */
+  border-radius: 25px; 
+  font-size: 1.1rem;
+  transition: background-color 0.4s ease, transform 0.5s ease;
+}
+
+/* Efecto Hover al pasar el mouse */
+.btn-red:hover {
+  background-color: #ffffff;
+  color: #492868;
+  transform: translateY(-3px); 
+}
+
+
+/*  SECCIÓN CUENTAME MAS */
+
+.seccion-historia {
+  background-color: #7e56a4;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* RECUADRO CENTRAL */
+.tarjeta-biografia {
+  background-color: #f1e9db;
+  max-width: 1500px;
+  width: 1100px;
+  border-radius: 50px;
+  padding: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px; 
+  box-shadow: 0px 10px 30px rgba(27, 19, 19, 0.308); /* Sombra */
+}
+
+/* --- BLOQUE DE TEXTO --- */
+.biografia-texto {
+  flex: 1.2; /* Le da un poco más de espacio al texto que a la foto */
+  display: flex;
+  flex-direction: column;
+}
+
+.titulo-historia {
+  color: #492868;
+  font-size: 3.5rem;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.biografia-texto p {
+  color: #492868; 
+  font-size: 1.3rem;
+  line-height: 1.5;
+  margin-bottom: 20px;
+  text-align: justify;
+}
+
+.biografia-texto p:last-child {
+  margin-bottom: 0; /* Quita el margen del último párrafo */
+}
+
+/* --- BLOQUE DE LA FOTO --- */
+.biografia-foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.biografia-foto img {
+  width: 100%;
+  max-width: 550px;
+  height: auto;
+  aspect-ratio: 4 / 3; /* Mantiene la proporción horizontal de la foto de grupo */
+  object-fit: cover;
+  border-radius: 20px; /* Esquinas redondeadas de la imagen */
+}
+
+/* --- RESPONSIVO (PARA CELULARES) --- */
+@media (max-width: 768px) {
+  .tarjeta-biografia {
+    flex-direction: column; /* Apila el texto arriba y la foto abajo */
+    padding: 40px 25px;
+    gap: 35px;
+  }
+}
+
+
+/* ==== PIE DE PAGINA ====*/
+
+.footer {
+  background-color: #D8A7B1;
+  color: white;
+  padding: 40px 0;
+  font-family: 'MontserratVariable';
+}
+
+.footer a {
+  color: white;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0b93ee;
+  transform: scale(1.2);
+}
+
+
+/* --- PERSONALIZACIÓN DEL MODAL --- */
+
+/* Contenedor general del modal */
+.contenedor-modal-contacto {
+  border-radius: 30px !important;
+  padding: 20px;
+  border: none !important;
+}
+
+/* Título principal */
+.titulo-modal {
+  color: #492868; 
+}
+
+/* Línea debajo del título */
+.linea-separadora {
+  border: 0;
+  border-top: 1px solid #5f5f5f;
+  margin: 15px 20px;
+}
+
+/* Estilos de los renglones */
+.item-contacto {
+  color: #492868;
+  font-size: 1.3rem;
+}
+
+/* Los enlaces de correo y teléfono */
+.texto-enlace {
+  color: #492868;
+}
+
+.texto-enlace:hover {
+  opacity: 0.8;
+}
+
+/* LOS ICONOS REDONDOS MORADOS */
+.icono-contacto {
+  color: #7e56a4; 
+  font-size: 1.7rem; /* Tamaño del icono */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BOTÓN CERRAR ROJO */
+.btn-cerrar-modal {
+  background-color: #ff3b30; 
+  border: none !important;
+  border-radius: 12px !important; 
+  padding: 10px 25px !important;
+  font-size: 1rem;
+}
+
+.btn-cerrar-modal:hover {
+  background-color: #ce2c23 !important;
+}

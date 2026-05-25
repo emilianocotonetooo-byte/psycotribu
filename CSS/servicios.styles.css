@@ -1,0 +1,380 @@
+/* ===================================================
+   CSS PARA LA PESTAÑA SERVICIOS
+   =================================================== */
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  overflow-x: hidden;
+}
+
+.row{
+  margin-left: 0;
+  margin-right: 0;
+}
+
+html {
+  scroll-behavior: smooth; 
+}
+
+   /* FUENTES */
+
+@font-face {
+  font-family: 'LoraVariable' ;
+  src: url('..//FONTS/Lora-VariableFont_wght.ttf');
+  font-weight: 100 700;
+  font-style: normal;
+}
+
+.fuente {
+  font-family: LoraVariable;
+  font-weight: 400;
+}
+
+.fuente-bold {
+  font-family: 'LoraVariable';
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'MontserratVariable';
+  src: url('..//FONTS/Montserrat-VariableFont_wght.ttf');
+  font-weight: 100 900;
+  font-style: normal;
+}
+
+.montserrat {
+  font-family: 'MontserratVariable';
+  font-weight: 400
+}
+
+.montserrat-bold {
+  font-family: 'MontserratVariable';
+  font-weight: 700;
+}
+
+
+
+
+/* --- PERSONALIZACIÓN DEL MODAL --- */
+
+/* Contenedor general del modal */
+.contenedor-modal-contacto {
+  border-radius: 30px !important;
+  padding: 20px;
+  border: none !important;
+}
+
+/* Título principal */
+.titulo-modal {
+  color: #492868; 
+}
+
+/* Línea debajo del título */
+.linea-separadora {
+  border: 0;
+  border-top: 1px solid #5f5f5f;
+  margin: 15px 20px;
+}
+
+/* Estilos de los renglones */
+.item-contacto {
+  color: #492868;
+  font-size: 1.3rem;
+}
+
+/* Los enlaces de correo y teléfono */
+.texto-enlace {
+  color: #492868;
+}
+
+.texto-enlace:hover {
+  opacity: 0.8;
+}
+
+/* LOS ICONOS REDONDOS MORADOS */
+.icono-contacto {
+  color: #7e56a4; 
+  font-size: 1.7rem; /* Tamaño del icono */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* BOTÓN CERRAR ROJO */
+.btn-cerrar-modal {
+  background-color: #ff3b30; 
+  border: none !important;
+  border-radius: 12px !important; /* Esquinas del botón */
+  padding: 10px 25px !important;
+  font-size: 1rem;
+}
+
+.btn-cerrar-modal:hover {
+  background-color: #ce2c23 !important;
+}
+
+
+
+
+/* --- SECCION TIPOS DE ACOMPAÑAMIENTOS --- */
+.seccion-servicios {
+  background-color: #f1e9db; 
+  padding: 80px 0;
+}
+
+/* Contenedor del título subrayado" */
+.contenedor-titulo-servicios {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 90px;
+}
+
+.badge-titulo {
+  background-color: #7e56a4;
+  color: #f1e9db;
+  font-size: 1.6rem;
+  text-transform: uppercase;
+  padding: 10px 40px;
+  letter-spacing: 2px;
+  display: inline-block;
+  margin: 0;
+}
+
+/* Contenedor general */
+.container-servicios {
+  max-width: 1100px;
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 90px; /* Separación amplia entre cada servicio */
+}
+
+/* CADA FILA DE SERVICIO */
+.row-servicio {
+  display: flex;
+  flex-direction: row; /* Texto izquierda, imagen derecha */
+  align-items: center;
+  gap: 60px;
+}
+
+/* Invierte el orden solo para las filas con esta clase */
+.row-servicio.fila-invertida {
+  flex-direction: row-reverse; /* Imagen izquierda, texto derecha */
+}
+
+/* COLUMNAS */
+.columna-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* Alinea los textos y el botón a la izquierda */
+  text-align: justify; /* Justificado */
+  align-items: flex-start;
+}
+
+.columna-imagen {
+  flex: 0.9;
+  display: flex;
+  justify-content: center;
+}
+
+.columna-imagen img {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  aspect-ratio: 4 / 3;
+  object-fit: cover;
+  box-shadow: 0px 10px 30px rgba(27, 19, 19, 0.308); /* Sombra */
+}
+
+/* --- ESTILOS DE TEXTO --- */
+.titulo-negro {
+  font-size: 1.5rem;
+  color: #000000;
+  line-height: 1.4;
+  margin-bottom: 15px;
+  text-align: left;
+}
+
+.titulo-morado {
+  color: #7e56a4; /* Morado para el texto principal */
+  font-size: 2.3rem;
+  line-height: 1.3;
+  margin-bottom: 25px;
+  text-align: left;
+}
+
+.detalles {
+  color: #7e56a4;
+  font-size: 1.05rem;
+  line-height: 1.6;
+  margin-bottom: 12px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+/* --- BOTÓN BUSCA APOYO --- */
+.btn-apoyo {
+  display: inline-block;
+  background-color: #492868; 
+  color: #ffffff;
+  text-decoration: none;
+  padding: 10px 30px;
+  border-radius: 20px; 
+  font-size: 1rem;
+  margin-top: 25px;
+  transition: all 0.4s ease;
+}
+
+.btn-apoyo:hover {
+  background-color: #ffffff;
+  color: #492868;
+  transform: translateY(-5px);
+}
+
+/* --- RESPONSIVO PARA CELULARES --- */
+@media (max-width: 768px) {
+  .row-servicio, 
+  .row-servicio.fila-invertida {
+    flex-direction: column-reverse; /* En móvil, la imagen siempre queda arriba del texto */
+    gap: 30px;
+  }
+  
+  .columna-info {
+    align-items: center; /* Centra el botón en móvil */
+    text-align: justify;
+  }
+  
+  .llamado-atencion {
+    font-size: 1.4rem;
+    text-align: center;
+  }
+}
+
+
+
+/* --- SECCION TERAPIA EN LÍNEA --- */
+.seccion-terapia-linea {
+  background-color: #7e56a4;
+  padding: 80px 0;
+  display: flex;
+  justify-content: center;
+}
+
+/* Contenedor principal alineado con Flexbox */
+.container-terapia {
+  max-width: 1100px;
+  width: 90%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 60px; 
+}
+
+/* Bloque de la Imagen */
+.columna-terapia-foto {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.columna-terapia-foto img {
+  width: 100%;
+  max-width: 500px;
+  height: auto;
+  aspect-ratio: 4 / 3; /* Proporción horizontal fija */
+  object-fit: cover;
+  border-radius: 30px;
+}
+
+/* Bloque de Información */
+.columna-terapia-info {
+  flex: 1.2;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; 
+}
+
+.titulo-terapia {
+  color: #ffffff; 
+  font-size: 2.6rem;
+  line-height: 1.2;
+  margin-bottom: 25px;
+  text-align: left; /* Alineado a la izquierda */
+}
+
+.descripcion-terapia {
+  color: #ffffff; 
+  font-size: 1.2rem;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  text-align: justify; 
+}
+
+/* --- BOTÓN AGENDAR TERAPIA --- */
+.btn-agendar {
+  display: inline-block;
+  background-color: #492868; 
+  color: #ffffff;
+  text-decoration: none;
+  padding: 12px 35px;
+  border-radius: 25px; 
+  font-size: 1.1rem;
+  transition: all 0.4s ease;
+}
+
+.btn-agendar:hover {
+  background-color: #ffffff;
+  color: #492868;
+  transform: translateY(-5px);
+}
+
+/* --- RESPONSIVO (MÓVIL) --- */
+@media (max-width: 768px) {
+  .container-terapia {
+    flex-direction: column; /* Apila los elementos en vertical */
+    gap: 40px;
+  }
+
+  .columna-terapia-info {
+    align-items: center; /* Centra el contenido en pantallas de celular */
+  }
+
+  .titulo-terapia {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .descripcion-terapia {
+    font-size: 1rem;
+    text-align: justify;
+  }
+}
+
+
+/* ==== PIE DE PAGINA ====*/
+
+.footer {
+  background-color: #D8A7B1;
+  color: white;
+  padding: 40px 0;
+  font-family: 'MontserratVariable';
+}
+
+.footer a {
+  color: white;
+  font-size: 22px;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover {
+  color: #0b93ee;
+  transform: scale(1.2);
+}
