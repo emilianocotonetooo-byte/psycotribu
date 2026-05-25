@@ -289,52 +289,49 @@ html {
 
 /* --- RESPONSIVO (PARA CELULARES) --- */
 @media (max-width: 768px) {
+
   .tarjeta-biografia {
-    flex-direction: column; /* Apila el texto arriba y la foto abajo */
+    flex-direction: column; 
     padding: 40px 25px;
     gap: 35px;
   }
-}
 
-
-/* --- ESTILOS RESPONSIVOS PARA CELULARES --- */
-@media (max-width: 768px) {
-  
   .seccion-presentacion {
-    padding: 40px 20px; /* Reducimos el espacio vertical y damos margen a los lados */
+    padding: 40px 20px !important; 
   }
 
   .container-presentacion {
-    flex-direction: column; /* Cambia de lado a lado a: uno arriba del otro */
-    gap: 30px; 
-    text-align: center; 
+    display: flex !important;
+    flex-direction: column !important; /* Fuerza a que se ponga uno abajo del otro */
+    gap: 30px !important; 
   }
 
   .columna-foto {
-    width: 100%;
-    order: 1; /* Asegura a CSS que la foto va primero arriba */
+    width: 100% !important;
+    display: flex !important;
+    justify-content: center !important;
   }
 
   .foto-perfil {
-    max-width: 280px; /* Controlamos que la foto no se desborde y se vea estética */
-    margin: 0 auto;
+    max-width: 280px !important; /* Hace la foto más estética en celular */
+    height: auto !important;
+    margin: 0 auto !important;
   }
 
   .columna-texto {
-    width: 100%;
-    order: 2; /* El texto se acomoda abajo de la foto */
-    text-align: center; 
+    width: 100% !important;
+    text-align: center !important; 
   }
 
   .titulo-nombre {
-    font-size: 2.2rem; /* Reducimos el tamaño de la tipografía para que no se coma la pantalla */
-    line-height: 1.2;
+    font-size: 2.2rem !important; 
+    line-height: 1.2 !important;
   }
 
   .descripcion {
-    font-size: 1.1rem; 
-    text-align: center; /* En celular el texto justificado deja huecos centrado se lee mejor */
-    margin-bottom: 10px;
+    font-size: 1.1rem !important;
+    text-align: center !important; 
+    margin-bottom: 10px !important;
   }
 }
 
